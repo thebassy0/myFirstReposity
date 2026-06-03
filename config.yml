@@ -1,0 +1,11 @@
+# Evita que los usuarios abran un issue en blanco sin usar ninguna de las plantillas
+blank_issues_enabled: false
+
+# Redirige a los usuarios a otros canales para soporte o preguntas
+contact_links:
+  - name: 💬 Foro de Preguntas y Ayuda
+    url: https://stackoverflow.com/questions/ask?tags=tu-proyecto
+    about: Por favor, haz y busca preguntas de soporte general aquí.
+  - name: 🚀 Comunidad en Discord
+    url: https://discord.gg/tu-enlace-de-invitacion
+    about: Únete a nuestra comunidad para charlar, resolver dudas rápidas y compartir ideas.
