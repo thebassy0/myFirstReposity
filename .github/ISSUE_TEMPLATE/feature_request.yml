@@ -1,0 +1,45 @@
+name: "Petición de Funcionalidad"
+description: "Sugiere una idea para mejorar el proyecto."
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por tu interés en mejorar este proyecto! Por favor, tómate un momento para detallar tu idea.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué problema resuelve tu idea?
+      description: ¿Tu petición está relacionada con un problema específico? Cuéntanos.
+      placeholder: "Ejemplo: Siempre me frustra cuando intento hacer X y ocurre Y..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Propuesta de solución
+      description: Describe de forma clara y concisa lo que te gustaría que sucediera.
+      placeholder: "Ejemplo: Me gustaría que se añadiera un botón que haga..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Describe cualquier solución alternativa o características que hayas considerado.
+      placeholder: "Ejemplo: Pensé en usar la herramienta Z, pero no se integra bien porque..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: ¿Te gustaría contribuir con esta funcionalidad?
+      description: Indícanos si estarías dispuesto a programar esta idea y enviar un Pull Request.
+      options:
+        - label: "Sí, estoy dispuesto a enviar un PR para esto."
+          required: false
