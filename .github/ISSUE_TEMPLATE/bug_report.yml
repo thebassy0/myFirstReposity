@@ -1,0 +1,70 @@
+name: "🐛 Reporte de Error"
+description: "Crea un informe para ayudarnos a mejorar el proyecto."
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por tomarte el tiempo de reportar este error! Por favor, completa el siguiente formulario.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del Error
+      description: Una descripción clara y concisa de lo que está pasando.
+      placeholder: "Ejemplo: El botón de login no responde al hacer clic..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Pasos para reproducir
+      description: ¿Cómo llegaste a ese error?
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer clic en '....'
+        3. Ver el error
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidad
+      description: ¿Qué tanto afecta este error al uso del sistema?
+      options:
+        - "Baja (Cosmético)"
+        - "Media (Funcionalidad con alternativa)"
+        - "Alta (Bloqueo de funciones)"
+        - "Crítica (Crash total)"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versión del software
+      description: Indica la versión o el hash del commit donde ocurre.
+      placeholder: "v1.2.0"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Lista de verificación
+      description: Asegúrate de haber realizado estos pasos antes de enviar.
+      options:
+        - label: He buscado en otros Issues y no hay uno similar.
+          required: true
+        - label: He actualizado a la última versión disponible.
+          required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs o Capturas de pantalla
+      description: Copia aquí cualquier log relevante o arrastra una imagen.
+      render: shell
