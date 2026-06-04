@@ -1,10 +1,4 @@
 # myFirstReposity
-Mi primer repositorio
 
-Mi primera contribucion para local para gitgub
+Este <b>proyecto</b> es creado como parte de aprendizaje con <i>platzi</i>
 
-Un commit desde github
-
-Una actualizacion un show mas
-
-cambios desde la branch stevenx
